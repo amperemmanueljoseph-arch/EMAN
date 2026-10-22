@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e8f2ce">
+    <title>A Little Note</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="topbar">
+            <a class="wordmark" href="#home" aria-label="A Little Note home">A LITTLE NOTE<span>.</span></a>
+            <span class="topbar-note">A CHECK-IN, JUST FOR YOU</span>
+        </header>
+
+        <section class="showcase" id="home" aria-labelledby="greeting-title">
+            <div class="message">
+                <p class="eyebrow"><span class="status-dot"></span> THINKING OF YOU</p>
+                <h1 id="greeting-title">HOW ARE<br>YOU<span>?</span></h1>
+                <p class="message-copy">kumusta ka namn love paka niya? aray mo tarantado</p>
+                <button class="inspect-button" type="button" id="open-zoom">
+                    <span class="button-icon" aria-hidden="true">+</span>
+                    TAKE A CLOSER LOOK
+                </button>
+                <div class="message-footer">
+                    <span>MADE WITH A LITTLE EXTRA CARE</span>
+                    <span class="footer-spark" aria-hidden="true">✳</span>
+                </div>
+            </div>
+
+            <div class="visual-column">
+                <div class="image-stage" id="image-stage" data-theme="sky">
+                    <span class="stage-index">01 <span>/</span> FRONT</span>
+                    <span class="stage-sticker" aria-hidden="true">GOOD<br>VIBES<br>ONLY <span>✳</span></span>
+                    <img class="shirt-image" src="maonani.png" alt="Front view of a blue and lavender custom polo shirt design">
+                    <div class="stage-controls">
+                        <span class="control-label">SET THE SCENE</span>
+                        <div class="swatches" role="group" aria-label="Choose image backdrop">
+                            <button class="swatch is-active" type="button" data-theme="sky" aria-label="Sky blue backdrop" aria-pressed="true"></button>
+                            <button class="swatch" type="button" data-theme="coral" aria-label="Coral backdrop" aria-pressed="false"></button>
+                            <button class="swatch" type="button" data-theme="leaf" aria-label="Leaf green backdrop" aria-pressed="false"></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="image-caption"><span>THE FRONT VIEW</span><span>2024 — 2025</span></p>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span>TAKE IT EASY TODAY</span>
+            <span>WITH LOVE, EMAN <span class="footer-heart" aria-hidden="true">♥</span></span>
+        </footer>
+    </main>
+
+    <dialog class="zoom-dialog" id="zoom-dialog" aria-labelledby="zoom-title">
+        <div class="dialog-topbar">
+            <h2 id="zoom-title">THE FRONT VIEW</h2>
+            <button class="close-button" type="button" id="close-zoom" aria-label="Close image view">×</button>
+        </div>
+        <img src="maonani.png" alt="Detailed front view of the blue and lavender custom polo shirt">
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
